@@ -1,0 +1,44 @@
+
+      /* Custom Styles */
+
+      /* Navbar Styles */
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      /* Carousel Image Styles */
+      .carousel-item img {
+        height: 550px;
+        object-fit: cover;
+      }
+
+      /* Card Hover Effect */
+      .card:hover {
+        transform: translateY(-10px);
+        transition: transform 0.3s;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      }
+
+      /* Accordion Icon Styles */
+      .accordion-button::after {
+        transition: transform 0.2s;
+      }
+
+      .accordion-button[aria-expanded="true"]::after {
+        transform: rotate(180deg);
+      }
+
+      /* Modal Customization */
+      .modal-header {
+        background-color: #0d6efd;
+        color: white;
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .carousel-item img {
+          height: 300px;
+        }
+      }
+    
