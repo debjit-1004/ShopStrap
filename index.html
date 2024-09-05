@@ -1,21 +1,28 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>DK E-commerce - Home</title>
+    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    
   </head>
-  </head>
+  
   <body>
    
-
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">DK E-commerce</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -24,21 +31,21 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#cuisines">Cuisines</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#food-items">Food Items</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                OPTIONS
+                More
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#cuisines">CUISINES</a></li>
-                <li><a class="dropdown-item" href="#food-items">FOOD ITEMS</a></li>
+                <li><a class="dropdown-item" href="#about-us">About Us</a></li>
+                <li><a class="dropdown-item" href="#contact">Contact</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">FAQs</a></li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -48,19 +55,34 @@
         </div>
       </div>
     </nav>
-    <!-- !Navbar-->
+    <!-- !Navbar -->
 
-    <!-- CAROUSEL-->
-    <div id="carouselExample" class="carousel slide ">
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img style="height: 550px;" src="https://media.istockphoto.com/id/1057435248/photo/jollof-rice-with-fried-chicken-wings-close-up-horizontal-top-view.jpg?s=612x612&w=0&k=20&c=1kT4O5aUXHtgWf4Tsa9UdBVdf6qYcgeZpdhwJuigA0E=" class="d-block w-100" alt="...">
+          <img src="https://media.istockphoto.com/id/1057435248/photo/jollof-rice-with-fried-chicken-wings-close-up-horizontal-top-view.jpg?s=612x612&w=0&k=20&c=1kT4O5aUXHtgWf4Tsa9UdBVdf6qYcgeZpdhwJuigA0E=" 
+               class="d-block w-100 img-fluid" alt="Jollof rice with chicken wings">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Delicious Jollof Rice</h5>
+            <p>Experience the authentic taste of West African cuisine.</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img style="height: 550px;"  src="https://media.istockphoto.com/id/1398351291/photo/jollof-rice-and-veggies-with-goat-meat.jpg?s=612x612&w=0&k=20&c=MImQ-sda29DOFzfEBU16M4RcPh-9F5hT9vyNrpZlGF4=" class="d-block w-100" alt="...">
+          <img src="https://media.istockphoto.com/id/1398351291/photo/jollof-rice-and-veggies-with-goat-meat.jpg?s=612x612&w=0&k=20&c=MImQ-sda29DOFzfEBU16M4RcPh-9F5hT9vyNrpZlGF4=" 
+               class="d-block w-100 img-fluid" alt="Jollof rice with goat meat">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Hearty Goat Meat</h5>
+            <p>Savor the rich flavors of our goat meat specialties.</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img style="height: 550px;"  src="https://media.istockphoto.com/id/1046016472/photo/peanut-puree-soup-with-greens-close-up-on-a-table-horizontal.jpg?s=612x612&w=0&k=20&c=tVFfSQ9IyBFYDFNh2OtaY77RO1NxIiLpcz1aG2JbHg0=" class="d-block w-100" alt="...">
+          <img src="https://media.istockphoto.com/id/1046016472/photo/peanut-puree-soup-with-greens-close-up-on-a-table-horizontal.jpg?s=612x612&w=0&k=20&c=tVFfSQ9IyBFYDFNh2OtaY77RO1NxIiLpcz1aG2JbHg0=" 
+               class="d-block w-100 img-fluid" alt="Peanut puree soup with greens">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Nutritious Peanut Soup</h5>
+            <p>A wholesome and flavorful soup to warm your soul.</p>
+          </div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -72,137 +94,202 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!-- !CAROUSEL-->
+    <!-- !Carousel -->
 
-    <div class="container">
-
-      <h1 id="cuisines" class="display-1 my-5" mt-3>CUISINES</h1>
-      <!--!ALL CUSINES -->
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://media.istockphoto.com/id/1398350666/photo/akara-bean-balls-with-dippings.jpg?s=612x612&w=0&k=20&c=kE6zFyUJU2LKZXcB98HkqPXJdcfAm8udXU2QfEnbf-4=" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Indian Food</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://media.istockphoto.com/id/1143709560/photo/man-eating-flat-bread-with-labneh-a-yoghurt-cream-cheese-dip-from-a-red-bowl.jpg?s=612x612&w=0&k=20&c=Dwi8fMZwORLDFA_mHGBOy6ngAIwhwMbPtusi7bdQPQE=" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Italian Food</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://media.istockphoto.com/id/1057433870/photo/jollof-rice-with-fried-chicken-wings-close-up-horizontal.jpg?s=612x612&w=0&k=20&c=Is-SAGynn7COvJaaW1CrqkFkHUuuJVHcEmYjdNzoH3s=" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Chineese Food</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--!ALL CUSINES -->
+    <div class="container my-5">
       
-      <!--FOOD ITEMS-->
-      <div id='food-items' class="display-4 my-5">FOOD ITEMS</div>
-
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Pizza
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      <!-- Cuisines Section -->
+      <section id="cuisines">
+        <h1 class="display-4 mb-4">Cuisines</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Indian Food Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://media.istockphoto.com/id/1398350666/photo/akara-bean-balls-with-dippings.jpg?s=612x612&w=0&k=20&c=kE6zFyUJU2LKZXcB98HkqPXJdcfAm8udXU2QfEnbf-4=" 
+                   class="card-img-top" alt="Akara bean balls with dipping">
+              <div class="card-body">
+                <h5 class="card-title">Indian Cuisine</h5>
+                <p class="card-text">Explore a variety of traditional Indian dishes bursting with flavor and spices.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Order Now</a>
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <!-- Italian Food Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://media.istockphoto.com/id/1143709560/photo/man-eating-flat-bread-with-labneh-a-yoghurt-cream-cheese-dip-from-a-red-bowl.jpg?s=612x612&w=0&k=20&c=Dwi8fMZwORLDFA_mHGBOy6ngAIwhwMbPtusi7bdQPQE=" 
+                   class="card-img-top" alt="Man eating flatbread with labneh dip">
+              <div class="card-body">
+                <h5 class="card-title">Italian Cuisine</h5>
+                <p class="card-text">Indulge in classic Italian favorites like pizza, pasta, and more.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Order Now</a>
+                <small class="text-muted">Last updated 10 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <!-- Chinese Food Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://media.istockphoto.com/id/1057433870/photo/jollof-rice-with-fried-chicken-wings-close-up-horizontal.jpg?s=612x612&w=0&k=20&c=Is-SAGynn7COvJaaW1CrqkFkHUuuJVHcEmYjdNzoH3s=" 
+                   class="card-img-top" alt="Jollof rice with fried chicken wings">
+              <div class="card-body">
+                <h5 class="card-title">Chinese Cuisine</h5>
+                <p class="card-text">Discover a range of delectable Chinese dishes, from dim sum to stir-fries.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Order Now</a>
+                <small class="text-muted">Last updated 15 mins ago</small>
+              </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Pasta
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </section>
+      <!-- !Cuisines Section -->
+
+      <!-- Food Items Section -->
+      <section id="food-items" class="mt-5">
+        <h2 class="display-5 mb-4">Food Items</h2>
+        <div class="accordion" id="accordionExample">
+          <!-- Pizza Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="bi bi-pizza-slice me-2"></i>Pizza
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" 
+                 aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Our Signature Pizza:</strong> Freshly baked with a variety of toppings to choose from. Made with the finest ingredients to ensure every bite is delicious.
+              </div>
+            </div>
+          </div>
+          <!-- Pasta Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="bi bi-pasta me-2"></i>Pasta
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" 
+                 aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Delicious Pasta:</strong> From creamy Alfredo to spicy Arrabbiata, our pasta dishes are crafted to perfection.
+              </div>
+            </div>
+          </div>
+          <!-- Paneer Tikka Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="bi bi-bowl me-2"></i>Paneer Tikka
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" 
+                 aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Spicy Paneer Tikka:</strong> Marinated paneer grilled to perfection, served with a side of tangy chutney.
+              </div>
+            </div>
+          </div>
+          <!-- Additional Food Items (Optional) -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <i class="bi bi-noodles me-2"></i>Noodles
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" 
+                 aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Classic Noodles:</strong> Stir-fried with fresh vegetables and your choice of protein for a satisfying meal.
+              </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Panner Tikka 
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </section>
+      <!-- !Food Items Section -->
+
+      <!-- Call to Action Button -->
+      <div class="text-center my-5">
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">
+          CALL US NOW ON 9832163272
+        </button>
+      </div>
+      <!-- !Call to Action Button -->
+
+      <!-- Contact Modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+              <form>
+                <div class="mb-3">
+                  <label for="contact-name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="contact-name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                  <label for="contact-email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="contact-email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="contact-message" class="form-label">Message</label>
+                  <textarea class="form-control" id="contact-message" rows="3" placeholder="Your message"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send Message</button>
             </div>
           </div>
         </div>
       </div>
+      <!-- !Contact Modal -->
 
-      <!--!FOOD ITEMS-->
-<!-- Button trigger modal -->
+      <!-- About Us Section (Optional) -->
+      <section id="about-us" class="mt-5">
+        <h2 class="display-5 mb-4">About Us</h2>
+        <p>DK E-commerce is your go-to destination for a diverse range of delicious cuisines. We are committed to delivering quality and authentic flavors right to your doorstep. Our team works tirelessly to ensure that every meal you order is prepared with the freshest ingredients and utmost care.</p>
+      </section>
+      <!-- !About Us Section -->
 
-<br></br>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
- CALL US NOW ON 9832163272
-</button>
+      <!-- Contact Section (Optional) -->
+      <section id="contact" class="mt-5">
+        <h2 class="display-5 mb-4">Get in Touch</h2>
+        <p>Have questions or feedback? We'd love to hear from you!</p>
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Phone:</strong> 9832163272</li>
+          <li class="list-group-item"><strong>Email:</strong> support@dkecommerce.com</li>
+          <li class="list-group-item"><strong>Address:</strong> 123 Food Street, Flavor Town</li>
+        </ul>
+      </section>
+      <!-- !Contact Section -->
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-      <!-- <ul class="list-group">
-        <li class="list-group-item">A simple default list group item</li>
-      
-        <li class="list-group-item list-group-item-primary">Pizza</li>
-        <li class="list-group-item list-group-item-secondary">Pasta</li>
-        <li class="list-group-item list-group-item-success">Paneer Tikka</li>
-        <li class="list-group-item list-group-item-danger">Noodles</li>
-        <li class="list-group-item list-group-item-warning">Ice Cream</li>
-        <li class="list-group-item list-group-item-info">A simple info list group item</li>
-        <li class="list-group-item list-group-item-light">A simple light list group item</li>
-        <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
-      </ul> -->
+    </div> <!-- End Container -->
 
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    </script>
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+            crossorigin="anonymous"></script>
+    <!-- Bootstrap Icons (Optional for Icons in Accordion) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </body>
 </html>
